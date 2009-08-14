@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE overlay PUBLIC "-//MOZILLA//DTD XUL V1.0//EN" "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+<?xml-stylesheet href="chrome://global/skin/global.css" type="text/css"?>
+
+<overlay id="scpfromkomodoideOverlay"
+         xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <script src="chrome://xtk/content/xtk.js" type="application/x-javascript;version=1.7"/>
+  <script type="application/x-javascript"
+          src="chrome://scpfromkomodoide/content/scpFromKomodo.js" />
+
+  <broadcasterset>
+    <broadcaster
+      id="cmd_scpfromkomodo_scp"
+      key="key_cmd_scpfromkomodo_scp"
+      desc="General: SCP"
+      oncommand="scpUtils.doSCP()" />
+  </broadcasterset>
+
+  <menupopup id="popup_file">
+    <menuitem id="menu_scpfromkomodoide"
+              label="SCP"
+              observes="cmd_scpfromkomodo_scp"
+              insertafter="menu_revert"
+              class="menu-iconic-wide"/>
+  </menupopup>
+    
+</overlay>

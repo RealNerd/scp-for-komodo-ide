@@ -1,0 +1,2 @@
+content scpfromkomodoide jar:scpfromkomodoide.jar!/content/ xpcnativewrappers=yes
+overlay chrome://komodo/content/komodo.xul chrome://scpfromkomodoide/content/overlay.xul
