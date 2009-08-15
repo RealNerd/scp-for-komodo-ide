@@ -3,5 +3,6 @@
  * Check if local file exists before trying to copy
  * Color/encode output based on success/fail
  * Configuration setup in IDE
- * Configure timeout??
+ * Configure timeout
  * Error message on timeout
+ * Allow configuration of scp program/path
